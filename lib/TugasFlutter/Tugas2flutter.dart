@@ -8,7 +8,7 @@ class Tugas2flutter extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 238, 233, 171),
+        backgroundColor: const Color.fromARGB(255, 97, 95, 65),
         title: const Text("Detail Toko"),
         centerTitle: true,
       ),
@@ -31,7 +31,7 @@ class Tugas2flutter extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 197, 146, 98),
+                color: const Color.fromARGB(255, 224, 208, 193),
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: const [
                   BoxShadow(
@@ -71,7 +71,7 @@ class Tugas2flutter extends StatelessWidget {
                     padding: const EdgeInsets.all(16),
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 197, 146, 98),
+                      color: const Color.fromARGB(255, 224, 208, 193),
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: const [
                         BoxShadow(
@@ -93,7 +93,7 @@ class Tugas2flutter extends StatelessWidget {
                     padding: const EdgeInsets.all(16),
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 197, 146, 98),
+                      color: const Color.fromARGB(255, 224, 208, 193),
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: const [
                         BoxShadow(
@@ -134,7 +134,7 @@ class Tugas2flutter extends StatelessWidget {
                   ),
                 ],
                 image: const DecorationImage(
-                  image: AssetImage("assets/images/nara_brand_logo.png"), //
+                  image: AssetImage("assets/images/cliff.png"), //
                   fit: BoxFit.cover,
                 ),
               ),
