@@ -1,8 +1,4 @@
-import 'package:belajar_flutter/TugasFlutter/Tugas2flutter.dart';
-import 'package:belajar_flutter/day_6/center.dart';
-import 'package:belajar_flutter/day_6/container.dart';
-import 'package:belajar_flutter/day_6/expanded.dart';
-import 'package:belajar_flutter/day_6/spacer.dart';
+import 'package:belajar_flutter/day8/textfield.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -35,7 +31,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Tugas2flutter(),
+      home: Textfield8(),
     );
   }
 }

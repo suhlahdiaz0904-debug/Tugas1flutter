@@ -1,8 +1,3 @@
-Berikut adalah kode lengkap yang telah disesuaikan. Bagian kotak bawah sekarang menggunakan **`DecorationImage`** dengan **`AssetImage`** sesuai dengan sintaks pada gambar yang Anda berikan, lengkap dengan efek *shadow* hitam pada bagian "Terjual", "Rating", dan kotak gambar tersebut.
-
-### Kode Lengkap yang Diperbarui:
-
-```dart
 import 'package:flutter/material.dart';
 
 class Tugas2flutter extends StatelessWidget {
@@ -137,7 +132,7 @@ class Tugas2flutter extends StatelessWidget {
                     offset: Offset(3, 3),
                   ),
                 ],
-                image: const DecorationImage(
+                image: DecorationImage(
                   image: AssetImage("assets/images/nara_brand_logo.png"), //
                   fit: BoxFit.cover,
                 ),
