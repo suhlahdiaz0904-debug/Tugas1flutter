@@ -1,4 +1,3 @@
-import 'package:belajar_flutter/TugasFlutter/Tugas3flutter.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
         // and then invoke "hot reload" (save your changes or press the "hot
         // reload" button in a Flutter-supported IDE, or press "r" if you used
         // the command line to start the app).
-        //
+
         // Notice that the counter didn't reset back to zero; the application
         // state is not lost during the reload. To reseSt the state, use hot
         // restart instead.
@@ -31,8 +30,48 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: TugasFlutter3(),
+      home: Contohstatefull(),
     );
+  }
+}
+
+class Contohstatefull extends StatefulWidget {
+  const Contohstatefull({super.key});
+
+  @override
+  State<Contohstatefull> createState() => _ContohstatefullState();
+}
+
+class _ContohstatefullState extends State<Contohstatefull> {
+  bool showImage = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        SizedBox(height: 50),
+        TextButton(
+          onPressed: () {
+            setState(() {
+              showImage = !showImage;
+            });
+          },
+          child: Text(showImage ? "Sembunyikan Gambar" : "Lihat Gambar"),
+        ),
+
+        if (showImage)
+          Image.network("https://picsum.photos/200", width: 200, height: 200),
+      ],
+    );
+  }
+}
+
+class ContohStateless extends StatelessWidget {
+  const ContohStateless({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Text("Contoh Stateless");
   }
 }
 

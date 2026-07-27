@@ -7,7 +7,7 @@ class Tugasflutter4 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Registrasi"),
+        title: const Text("Laporan & Riwayat Tebing"),
         backgroundColor: const Color.fromARGB(255, 195, 214, 212),
         centerTitle: true,
       ),
@@ -34,7 +34,7 @@ class Tugasflutter4 extends StatelessWidget {
               child: Column(
                 children: [
                   const Text(
-                    "Form Registrasi",
+                    "Laporan Kondisi Tebing",
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 16),
@@ -42,8 +42,8 @@ class Tugasflutter4 extends StatelessWidget {
                   // TextField 1: Nama Pengguna dengan prefixIcon
                   TextField(
                     decoration: InputDecoration(
-                      hintText: "Nama Pengguna",
-                      prefixIcon: const Icon(Icons.person),
+                      hintText: "Titik Lokasi / Koordinat ",
+                      prefixIcon: const Icon(Icons.map_outlined),
                       filled: true,
                       fillColor: const Color.fromARGB(255, 253, 247, 247),
                       border: OutlineInputBorder(
@@ -56,8 +56,8 @@ class Tugasflutter4 extends StatelessWidget {
                   // TextField 2: Email Pengguna dengan prefixIcon
                   TextField(
                     decoration: InputDecoration(
-                      hintText: "Email Pengguna",
-                      prefixIcon: const Icon(Icons.email),
+                      hintText: "Nama Tebing",
+                      prefixIcon: const Icon(Icons.local_activity_rounded),
                       filled: true,
                       fillColor: const Color.fromARGB(255, 253, 247, 247),
                       border: OutlineInputBorder(
@@ -70,8 +70,8 @@ class Tugasflutter4 extends StatelessWidget {
                   // TextField 3: Telephone Pengguna dengan prefixIcon
                   TextField(
                     decoration: InputDecoration(
-                      hintText: "Telephone Pengguna",
-                      prefixIcon: const Icon(Icons.phone),
+                      hintText: "Nama Pelapor",
+                      prefixIcon: const Icon(Icons.person),
                       filled: true,
                       fillColor: const Color.fromARGB(255, 253, 247, 247),
                       border: OutlineInputBorder(
@@ -85,8 +85,8 @@ class Tugasflutter4 extends StatelessWidget {
                   TextField(
                     obscureText: true,
                     decoration: InputDecoration(
-                      hintText: "Input Password",
-                      prefixIcon: const Icon(Icons.vpn_key),
+                      hintText: "Catatan Tambahan",
+                      prefixIcon: const Icon(Icons.description),
                       filled: true,
                       fillColor: const Color.fromARGB(255, 253, 247, 247),
                       border: OutlineInputBorder(
@@ -97,34 +97,189 @@ class Tugasflutter4 extends StatelessWidget {
                   const SizedBox(height: 12),
 
                   // TextField 5: Konfirmasi Password dengan label/suffixIcon mata
-                  TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      labelText: "Konfirmasi Password",
-                      hintText: "Masukkan Konfirmasi Passw...",
-                      suffixIcon: const Icon(Icons.visibility),
-                      filled: true,
-                      fillColor: const Color.fromARGB(255, 253, 247, 247),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                    ),
-                  ),
                 ],
               ),
             ),
             const SizedBox(height: 20),
 
             // Judul Bagian Bawah
-            Center(
-              child: const Text(
-                "Wilayah Pemanjatan",
+            const Padding(
+              padding: EdgeInsetsGeometry.symmetric(horizontal: 16),
+              child: Text(
+                "Riwayat Laporan Terakhir",
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ),
+
             const SizedBox(height: 12),
 
-            // Grid / Daftar Wilayah Gambar
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 6),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 250, 250, 249),
+                borderRadius: BorderRadius.circular(15),
+                boxShadow: const [
+                  BoxShadow(color: Colors.black, blurRadius: 1),
+                ],
+              ),
+
+              child: const ListTile(
+                leading: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: Icon(
+                    Icons.person,
+                    color: Color.fromARGB(255, 0, 0, 0),
+                  ),
+                ),
+
+                title: Text(
+                  "Suhlah",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                subtitle: Text("Tebing Citatah"),
+                trailing: Icon(Icons.arrow_forward_ios),
+              ),
+            ),
+
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 6),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 250, 250, 249),
+                borderRadius: BorderRadius.circular(15),
+                boxShadow: const [
+                  BoxShadow(color: Colors.black, blurRadius: 1),
+                ],
+              ),
+
+              child: const ListTile(
+                leading: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: Icon(
+                    Icons.person,
+                    color: Color.fromARGB(255, 0, 0, 0),
+                  ),
+                ),
+
+                title: Text(
+                  "Livia",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                subtitle: Text("Tebing Parang"),
+                trailing: Icon(Icons.arrow_forward_ios),
+              ),
+            ),
+
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 6),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 250, 250, 249),
+                borderRadius: BorderRadius.circular(15),
+                boxShadow: const [
+                  BoxShadow(color: Colors.black, blurRadius: 1),
+                ],
+              ),
+
+              child: const ListTile(
+                leading: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: Icon(
+                    Icons.person,
+                    color: Color.fromARGB(255, 0, 0, 0),
+                  ),
+                ),
+
+                title: Text(
+                  "Tisan",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                subtitle: Text("Tebing Arpam"),
+                trailing: Icon(Icons.arrow_forward_ios),
+              ),
+            ),
+
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 6),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 250, 250, 249),
+                borderRadius: BorderRadius.circular(15),
+                boxShadow: const [
+                  BoxShadow(color: Colors.black, blurRadius: 1),
+                ],
+              ),
+
+              child: const ListTile(
+                leading: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: Icon(
+                    Icons.person,
+                    color: Color.fromARGB(255, 0, 0, 0),
+                  ),
+                ),
+
+                title: Text(
+                  "Mirza",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                subtitle: Text("Tebing Hawu"),
+                trailing: Icon(Icons.arrow_forward_ios),
+              ),
+            ),
+
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 6),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 250, 250, 249),
+                borderRadius: BorderRadius.circular(15),
+                boxShadow: const [
+                  BoxShadow(color: Colors.black, blurRadius: 1),
+                ],
+              ),
+
+              child: const ListTile(
+                leading: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: Icon(
+                    Icons.person,
+                    color: Color.fromARGB(255, 0, 0, 0),
+                  ),
+                ),
+
+                title: Text(
+                  "Riby",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                subtitle: Text("Tebing Cidomba"),
+                trailing: Icon(Icons.arrow_forward_ios),
+              ),
+            ),
+
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 6),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 250, 250, 249),
+                borderRadius: BorderRadius.circular(15),
+                boxShadow: const [
+                  BoxShadow(color: Colors.black, blurRadius: 1),
+                ],
+              ),
+
+              child: const ListTile(
+                leading: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: Icon(
+                    Icons.person,
+                    color: Color.fromARGB(255, 0, 0, 0),
+                  ),
+                ),
+
+                title: Text(
+                  "Widlis",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                subtitle: Text("Tebing Jeger"),
+                trailing: Icon(Icons.arrow_forward_ios),
+              ),
+            ),
           ],
         ),
       ),
