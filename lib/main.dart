@@ -1,4 +1,4 @@
-import 'package:belajar_flutter/day8/textfield.dart';
+import 'package:belajar_flutter/TugasFlutter/Tugas3flutter.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,14 +24,14 @@ class MyApp extends StatelessWidget {
         // the command line to start the app).
         //
         // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
+        // state is not lost during the reload. To reseSt the state, use hot
         // restart instead.
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Textfield8(),
+      home: TugasFlutter3(),
     );
   }
 }
