@@ -1,3 +1,4 @@
+import 'package:belajar_flutter/TugasFlutter/Tugas5flutter.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -30,48 +31,8 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Contohstatefull(),
+      home: Tugasflutter5(),
     );
-  }
-}
-
-class Contohstatefull extends StatefulWidget {
-  const Contohstatefull({super.key});
-
-  @override
-  State<Contohstatefull> createState() => _ContohstatefullState();
-}
-
-class _ContohstatefullState extends State<Contohstatefull> {
-  bool showImage = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(height: 50),
-        TextButton(
-          onPressed: () {
-            setState(() {
-              showImage = !showImage;
-            });
-          },
-          child: Text(showImage ? "Sembunyikan Gambar" : "Lihat Gambar"),
-        ),
-
-        if (showImage)
-          Image.network("https://picsum.photos/200", width: 200, height: 200),
-      ],
-    );
-  }
-}
-
-class ContohStateless extends StatelessWidget {
-  const ContohStateless({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Text("Contoh Stateless");
   }
 }
 
