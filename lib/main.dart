@@ -1,4 +1,4 @@
-import 'package:belajar_flutter/TugasFlutter/Tugas5flutter.dart';
+import 'package:belajar_flutter/TugasFlutter/Tugas6flutter.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,7 +31,9 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Tugasflutter5(),
+      initialRoute: "/",
+      routes: {},
+      home: Tugasflutter6(),
     );
   }
 }
